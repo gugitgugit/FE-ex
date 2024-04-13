@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            button {
+                width: 200px;
+                height: 100px;
+                border-radius: 10px;
+                border: 2px solid gray;
+                background-color: pink;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <button onClick="Alert()">클릭!클릭!</button>
+
+        <script>
+            let num = 0;
+            function Alert() {
+                alert('안녕안녕');
+                num += 1;
+                sayHi();
+                counter();
+            }
+
+            var sayHi = () => {
+                console.log('hi');
+            };
+
+            var counter = function () {
+                console.log(`클릭 버튼을 ${num}번 누르셨습니다`);
+            };
+
+            var handsomeguy = {
+                name: 'jin woo lee',
+                age: 26,
+            };
+
+            handsomeguy.job = 'engineer';
+
+            console.log(handsomeguy.name);
+            console.log(handsomeguy['age']);
+            console.log(handsomeguy.job);
+        </script>
+    </body>
+</html>
